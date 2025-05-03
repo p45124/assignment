@@ -129,7 +129,6 @@ X_train_sm = sm.add_constant(X_train)  # Add a constant (intercept)
 model_sm = sm.OLS(y_train, X_train_sm).fit()
 print(model_sm.summary())
 
-!pip install streamlit
 
 import streamlit as st
 import pandas as pd
